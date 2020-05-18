@@ -2,12 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends React.Component {
-    // eslint-disable-next-line no-useless-constructor
-    constructor(props) {
-        super(props);
-
-        this.state = { lat: null, errorMessage:'' };
-    }
+    
+    state = { lat: null, errorMessage:'' };
 
     componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
